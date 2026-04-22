@@ -1,33 +1,27 @@
+public class Blokje {
+    private int nummer;
+    private Kleur kleur;
+    private boolean isJoker;
 
-/**
- * class Blokje - geef hier een beschrijving van deze class
- *
- * @author (jouw naam)
- * @version (versie nummer of datum)
- */
-public class Blokje
-{
-    // instance variables - vervang deze door jouw variabelen
-    private int x;
-
-    /**
-     * Constructor voor objects van class Blokje
-     */
-    public Blokje()
+    public Blokje(int nummer, Kleur kleur, boolean isJoker)
     {
-        // geef de instance variables een beginwaarde
-        x = 0;
+        this.nummer = nummer;
+        this.kleur = kleur;
+        this.isJoker = isJoker;
     }
 
-    /**
-     * Voorbeeld van een method - schrijf hier jouw comment
-     *
-     * @param  y    deze method krijgt deze parameter mee in de aanroep
-     * @return    deze method geeft de som van x en y terug
-     */
-    public int voorbeeldMethod(int y)
+    public boolean getIsJoker()
     {
-        // schrijf hier jouw code
-        return x + y;
+        return isJoker;
+    }
+    
+    public int getNummer()
+    {
+        return nummer;
+    }
+    
+    public Kleur getKleur()
+    {
+        return kleur;
     }
 }
